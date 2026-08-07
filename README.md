@@ -2,13 +2,9 @@
 
 **A self-evolving, experiment-grounded generative scientific agent for adaptive inverse design of functional polymers.**
 
-This repository accompanies the paper:
-
-> **A materials discovery agent for adaptive inverse design of functional polymers**
-> Renming Wan, Haoke Qiu, Yurun Lyu, Jiahui Chen, Yusong Cao, Jiangai Long, Aolin Sun, Zhuoqun Han, Kuncheng Lv, Sheng Ma, Zhao-Yan Sun, Wantong Song
-> State Key Laboratory of Polymer Science and Technology, Changchun Institute of Applied Chemistry, CAS
-
 Code and data supporting the results in the manuscript will be released here.
+**Pretraining codes and fine-tuning scripts** can be found at [PolyTAO](https://github.com/hkqiu/PolymerGenerationPretrainedModel).
+**Other Codes** will be uploaded when our lab's server is powered on (ASAP, maybe before the end of this month).
 
 ## Overview
 
