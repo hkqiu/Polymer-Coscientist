@@ -50,4 +50,4 @@ For questions about this work, please contact the corresponding authors listed i
 
 ## License
 
-This repository is released under the [MIT License](LICENSE) unless otherwise noted for specific datasets or third-party components.
+This repository is released under the [Apache License 2.0](LICENSE) unless otherwise noted for specific datasets or third-party components.
