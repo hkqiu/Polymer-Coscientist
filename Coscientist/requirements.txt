@@ -1,0 +1,14 @@
+# Coscientist - iterative knowledge-training framework for polymer mRNA vaccine carrier design
+# Core
+numpy>=1.24,<2.0
+pandas>=2.0
+pyyaml>=6.0
+tqdm>=4.66
+requests>=2.31
+
+# CLI
+click>=8.1
+rich>=13.7
+
+# Testing
+pytest>=8.0

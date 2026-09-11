@@ -1,0 +1,26 @@
+# === Coscientist configuration (placeholder values; no real secrets in public releases) ===
+# Copy this file to configs/secrets.yaml and fill in real values, or override via
+# environment variables:
+#   COSCIENTIST_LLM_API_KEY / COSCIENTIST_LLM_BASE_URL
+
+llm:
+  provider: "mimo"                 # Logical name, used only for log labeling
+  model: "MiMo-v2.5-pro"           # Placeholder model name
+  base_url: "https://REPLACE_ME.example.com/v1"   # OpenAI-compatible endpoint, placeholder
+  api_key_env: "COSCIENTIST_LLM_API_KEY"          # Env var name to read the key from; never hardcode it
+  temperature: 0.3
+  max_tokens: 2048
+  timeout_s: 60
+  # When mock is true, no real network request is made; a local rule-based mock
+  # response is used instead, for reproducible dry runs / unit tests without an API.
+  mock: true
+
+training:
+  data_csv: "data/raw/carrier_dataset.csv"   # 1,126 experimental records (user-supplied, not versioned)
+  round_size: 20                              # Samples per round
+  n_rounds: 50                                # Number of rounds (final round absorbs the remainder)
+  shuffle: false                              # Whether to shuffle before splitting (default: original order)
+  seed: 42
+  knowledge_out: "knowledge/knowledge.txt"
+  snapshot_dir: "knowledge/checkpoints"       # Per-round knowledge snapshots (optional, for traceability)
+  save_every_round: true
